@@ -9,12 +9,50 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var textLogin: UITextField!
+    @IBOutlet weak var textPassword: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         // Do any additional setup after loading the view.
+
+//          loginButton.setTitleColor(.red, for: .normal)
+//          loginButton.setTitleColor(.red, for: .highlighted)
+        
+        textLogin.keyboardType = UIKeyboardType.emailAddress
+
+    
+    }
+ // MARK: - User Actions
+    
+    @IBAction func endEditing(sender: UITextField) {
+        if textLogin === sender {
+            print("login: | \(sender.text!)")
+            textPassword.becomeFirstResponder()
+           
+        } else {
+            print("pass: | \(sender.text!)")
+            sender.resignFirstResponder()
+        }
+        
+    }
+    @IBAction func login(sender: UIButton) {
+//        print(sender)
     }
 
-
+    @IBAction func tap(sender: UITapGestureRecognizer) {
+//        print("Tap - \(sender.state)")
+        switch  sender.state {
+        case .ended:
+              view.endEditing(true)
+        default:
+             print("Other")
+        }
+        
+    }
 }
 

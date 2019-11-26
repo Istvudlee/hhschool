@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B1238D285C00F30776 /* CustomButton.swift */; };
+		B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B3238D330800F30776 /* CustomTextField.swift */; };
 		B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53340AA2386BDB4003CB922 /* AppDelegate.swift */; };
 		B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53340AE2386BDB4003CB922 /* ViewController.swift */; };
 		B53340B22386BDB4003CB922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B02386BDB4003CB922 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B518C6B1238D285C00F30776 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B518C6B3238D330800F30776 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B53340A72386BDB4003CB922 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53340AA2386BDB4003CB922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53340AE2386BDB4003CB922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		B53340A92386BDB4003CB922 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				B518C6B3238D330800F30776 /* CustomTextField.swift */,
+				B518C6B1238D285C00F30776 /* CustomButton.swift */,
 				B53340AA2386BDB4003CB922 /* AppDelegate.swift */,
 				B53340AE2386BDB4003CB922 /* ViewController.swift */,
 				B53340B02386BDB4003CB922 /* Main.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */,
 				B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */,
 				B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */,
+				B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
