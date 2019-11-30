@@ -8,24 +8,22 @@
 
 import UIKit
 
-@IBDesignable class CustomButton: UIButton {
-    @IBInspectable var highlightedColor : UIColor = .clear {
-        didSet {
-            if (isHighlighted) {
-                layer.backgroundColor = highlightedColor.cgColor
-            }
-        }
-    }
+@IBDesignable
+class CustomButton: UIButton {
+    @IBInspectable var highlightedColor : UIColor?
+    
+    private var baseBackgroundColor: UIColor?
+
     override var isHighlighted: Bool {
+        
          didSet {
-//            print(isHighlighted)
-            if (isHighlighted) {
-                backgroundColor = highlightedColor
-            } else {
-                backgroundColor = .red
-            }
-            
+            backgroundColor = isHighlighted ? highlightedColor : baseBackgroundColor // baseBackgroundColor
          }
+    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        baseBackgroundColor = backgroundColor
     }
     
 }

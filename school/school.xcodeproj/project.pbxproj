@@ -14,6 +14,7 @@
 		B53340B22386BDB4003CB922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B02386BDB4003CB922 /* Main.storyboard */; };
 		B53340B42386BDB5003CB922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53340B32386BDB5003CB922 /* Assets.xcassets */; };
 		B53340B72386BDB5003CB922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B52386BDB5003CB922 /* LaunchScreen.storyboard */; };
+		B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579F641238EE5C1006FD888 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B53340B32386BDB5003CB922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53340B62386BDB5003CB922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53340B82386BDB5003CB922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B579F641238EE5C1006FD888 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B53340B32386BDB5003CB922 /* Assets.xcassets */,
 				B53340B52386BDB5003CB922 /* LaunchScreen.storyboard */,
 				B53340B82386BDB5003CB922 /* Info.plist */,
+				B579F641238EE5C1006FD888 /* RegistrationViewController.swift */,
 			);
 			path = school;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */,
 				B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */,
 				B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */,
+				B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

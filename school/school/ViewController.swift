@@ -20,10 +20,9 @@ class ViewController: UIViewController {
       
         // Do any additional setup after loading the view.
 
-//          loginButton.setTitleColor(.red, for: .normal)
-//          loginButton.setTitleColor(.red, for: .highlighted)
         
         textLogin.keyboardType = UIKeyboardType.emailAddress
+        
 
     
     }
@@ -31,11 +30,11 @@ class ViewController: UIViewController {
     
     @IBAction func endEditing(sender: UITextField) {
         if textLogin === sender {
-            print("login: | \(sender.text!)")
+             print("Login: \(String(describing: sender.text!))")
             textPassword.becomeFirstResponder()
            
         } else {
-            print("pass: | \(sender.text!)")
+            print("Password: \(String(describing: sender.text!))")
             sender.resignFirstResponder()
         }
         
