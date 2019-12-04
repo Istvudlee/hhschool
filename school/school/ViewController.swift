@@ -18,20 +18,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        // Do any additional setup after loading the view.
 
-        
-        textLogin.keyboardType = UIKeyboardType.emailAddress
-        
-
-    
     }
  // MARK: - User Actions
     
     @IBAction func endEditing(sender: UITextField) {
         if textLogin === sender {
              print("Login: \(String(describing: sender.text!))")
-            textPassword.becomeFirstResponder()
+             textPassword.becomeFirstResponder()
            
         } else {
             print("Password: \(String(describing: sender.text!))")

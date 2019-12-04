@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable class CustomTextField: UITextField {
+@IBDesignable
+class CustomTextField: UITextField {
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet {
             self.layer.borderWidth = borderWidth

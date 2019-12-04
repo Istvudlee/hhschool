@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50C178D239541F200F505A7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C178C239541F200F505A7 /* ProfileViewController.swift */; };
+		B50C178F23954E6D00F505A7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C178E23954E6D00F505A7 /* CustomCell.swift */; };
 		B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B1238D285C00F30776 /* CustomButton.swift */; };
 		B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B3238D330800F30776 /* CustomTextField.swift */; };
 		B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53340AA2386BDB4003CB922 /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50C178C239541F200F505A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		B50C178E23954E6D00F505A7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = SOURCE_ROOT; };
 		B518C6B1238D285C00F30776 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B518C6B3238D330800F30776 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B53340A72386BDB4003CB922 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,15 +64,17 @@
 		B53340A92386BDB4003CB922 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				B50C178E23954E6D00F505A7 /* CustomCell.swift */,
+				B50C178C239541F200F505A7 /* ProfileViewController.swift */,
 				B518C6B3238D330800F30776 /* CustomTextField.swift */,
 				B518C6B1238D285C00F30776 /* CustomButton.swift */,
 				B53340AA2386BDB4003CB922 /* AppDelegate.swift */,
+				B579F641238EE5C1006FD888 /* RegistrationViewController.swift */,
 				B53340AE2386BDB4003CB922 /* ViewController.swift */,
 				B53340B02386BDB4003CB922 /* Main.storyboard */,
 				B53340B32386BDB5003CB922 /* Assets.xcassets */,
 				B53340B52386BDB5003CB922 /* LaunchScreen.storyboard */,
 				B53340B82386BDB5003CB922 /* Info.plist */,
-				B579F641238EE5C1006FD888 /* RegistrationViewController.swift */,
 			);
 			path = school;
 			sourceTree = "<group>";
@@ -144,10 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50C178D239541F200F505A7 /* ProfileViewController.swift in Sources */,
 				B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */,
 				B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */,
 				B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */,
 				B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */,
+				B50C178F23954E6D00F505A7 /* CustomCell.swift in Sources */,
 				B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
