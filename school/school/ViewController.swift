@@ -15,14 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    weak var delegate: UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
 
     }
+    
  // MARK: - User Actions
     
     @IBAction func endEditing(sender: UITextField) {
+        
         if textLogin === sender {
              print("Login: \(String(describing: sender.text!))")
              textPassword.becomeFirstResponder()
@@ -33,12 +36,18 @@ class ViewController: UIViewController {
         }
         
     }
+    
     @IBAction func login(sender: UIButton) {
-//        print(sender)
+        
+        (delegate as? ProfileViewController)?.test = true
+        
+        navigationController?.popToRootViewController(animated: true)
+       
     }
+    
 
     @IBAction func tap(sender: UITapGestureRecognizer) {
-//        print("Tap - \(sender.state)")
+        
         switch  sender.state {
         case .ended:
               view.endEditing(true)

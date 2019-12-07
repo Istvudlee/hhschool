@@ -11,11 +11,14 @@
 		B50C178F23954E6D00F505A7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C178E23954E6D00F505A7 /* CustomCell.swift */; };
 		B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B1238D285C00F30776 /* CustomButton.swift */; };
 		B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518C6B3238D330800F30776 /* CustomTextField.swift */; };
+		B52FA818239988EE0012DA8D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FA817239988EE0012DA8D /* AuthViewController.swift */; };
+		B52FA81A2399891C0012DA8D /* NotAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FA8192399891C0012DA8D /* NotAuthViewController.swift */; };
 		B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53340AA2386BDB4003CB922 /* AppDelegate.swift */; };
 		B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53340AE2386BDB4003CB922 /* ViewController.swift */; };
 		B53340B22386BDB4003CB922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B02386BDB4003CB922 /* Main.storyboard */; };
 		B53340B42386BDB5003CB922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53340B32386BDB5003CB922 /* Assets.xcassets */; };
 		B53340B72386BDB5003CB922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B52386BDB5003CB922 /* LaunchScreen.storyboard */; };
+		B54C3760239819B5008514EB /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C375F239819B5008514EB /* CustomSegue.swift */; };
 		B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579F641238EE5C1006FD888 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,8 @@
 		B50C178E23954E6D00F505A7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = SOURCE_ROOT; };
 		B518C6B1238D285C00F30776 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B518C6B3238D330800F30776 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B52FA817239988EE0012DA8D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = SOURCE_ROOT; };
+		B52FA8192399891C0012DA8D /* NotAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAuthViewController.swift; sourceTree = SOURCE_ROOT; };
 		B53340A72386BDB4003CB922 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53340AA2386BDB4003CB922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53340AE2386BDB4003CB922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		B53340B32386BDB5003CB922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53340B62386BDB5003CB922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53340B82386BDB5003CB922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54C375F239819B5008514EB /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = SOURCE_ROOT; };
 		B579F641238EE5C1006FD888 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +70,9 @@
 		B53340A92386BDB4003CB922 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				B52FA8192399891C0012DA8D /* NotAuthViewController.swift */,
+				B52FA817239988EE0012DA8D /* AuthViewController.swift */,
+				B54C375F239819B5008514EB /* CustomSegue.swift */,
 				B50C178E23954E6D00F505A7 /* CustomCell.swift */,
 				B50C178C239541F200F505A7 /* ProfileViewController.swift */,
 				B518C6B3238D330800F30776 /* CustomTextField.swift */,
@@ -150,12 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52FA81A2399891C0012DA8D /* NotAuthViewController.swift in Sources */,
+				B54C3760239819B5008514EB /* CustomSegue.swift in Sources */,
 				B50C178D239541F200F505A7 /* ProfileViewController.swift in Sources */,
 				B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */,
 				B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */,
 				B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */,
 				B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */,
 				B50C178F23954E6D00F505A7 /* CustomCell.swift in Sources */,
+				B52FA818239988EE0012DA8D /* AuthViewController.swift in Sources */,
 				B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

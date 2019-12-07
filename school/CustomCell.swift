@@ -13,8 +13,5 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var imageViewCell: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
     
-    func addImageAndTitle(image:UIImage, labelText:String) {
-        imageViewCell.image = image
-        labelTitle.text = labelText
-    }
+
 }
