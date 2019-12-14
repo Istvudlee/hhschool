@@ -43,7 +43,6 @@ class RegistrationViewController: UIViewController, UIScrollViewDelegate {
             return
         }
         
-//        print("userInfo - \(userInfo)")
         guard let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
             return
         }
@@ -56,7 +55,7 @@ class RegistrationViewController: UIViewController, UIScrollViewDelegate {
         }
         
         UIView.animate(withDuration: TimeInterval(truncating: animationKeyboard)) {
-//            print("it is self - \(self)")
+            
             self.scrollView.contentInset.bottom = keyboardHeight
             self.scrollView.verticalScrollIndicatorInsets.bottom = keyboardHeight
         }
@@ -64,7 +63,6 @@ class RegistrationViewController: UIViewController, UIScrollViewDelegate {
     
 
     @IBAction func tapRegistration(sender: UITapGestureRecognizer) {
-    //        print("Tap - \(sender.state)")
             switch  sender.state {
             case .ended:
                   view.endEditing(true)
@@ -77,20 +75,12 @@ class RegistrationViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func beginEditing(sender: UITextField) {
         let visibleArea = scrollView.frame.height - keyboardHeight
         
-//        print(" Scroll view - \(scrollView.frame.height)")
-//        print(" keyboardHeight - \(keyboardHeight)")
-//        print(" visibleArea - \(visibleArea)")
-//        print(" scrollView.frame.size.height - \(scrollView.frame.size.height)")
-//
+
         let centerY = visibleArea / 2.0
         
         let convertedFrame = view.convert(sender.frame, from: sender.superview)
         
         let diff = convertedFrame.midY - centerY
-        
-//        print(" convertedFrame - \(convertedFrame)")
-//        print(" convertedFrame mid - \(convertedFrame.midX) , \( convertedFrame.midY)")
-//        print("centerY - \(centerY)")
         
         let minContentOffset: CGFloat = -scrollView.adjustedContentInset.top
         

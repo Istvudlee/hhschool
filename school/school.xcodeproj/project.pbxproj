@@ -18,17 +18,21 @@
 		B53340B22386BDB4003CB922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B02386BDB4003CB922 /* Main.storyboard */; };
 		B53340B42386BDB5003CB922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53340B32386BDB5003CB922 /* Assets.xcassets */; };
 		B53340B72386BDB5003CB922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53340B52386BDB5003CB922 /* LaunchScreen.storyboard */; };
-		B54C3760239819B5008514EB /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C375F239819B5008514EB /* CustomSegue.swift */; };
+		B54FCA5723A1029300FCE2A2 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54FCA5623A1029300FCE2A2 /* DataViewController.swift */; };
+		B54FCA5923A107F300FCE2A2 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54FCA5823A107F300FCE2A2 /* DataTableViewCell.swift */; };
 		B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579F641238EE5C1006FD888 /* RegistrationViewController.swift */; };
+		B58D88C6239E69CC00568C84 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58D88C5239E69CC00568C84 /* Alamofire.framework */; };
+		B5A9C96A23A17F4A00E923F5 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D6BFE239FF08800BCF2B5 /* Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B50C178C239541F200F505A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
-		B50C178E23954E6D00F505A7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = SOURCE_ROOT; };
+		B50C178C239541F200F505A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = school/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		B50C178E23954E6D00F505A7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = school/CustomCell.swift; sourceTree = SOURCE_ROOT; };
 		B518C6B1238D285C00F30776 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B518C6B3238D330800F30776 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		B52FA817239988EE0012DA8D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = SOURCE_ROOT; };
-		B52FA8192399891C0012DA8D /* NotAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAuthViewController.swift; sourceTree = SOURCE_ROOT; };
+		B51D6BFE239FF08800BCF2B5 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		B52FA817239988EE0012DA8D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = school/AuthViewController.swift; sourceTree = SOURCE_ROOT; };
+		B52FA8192399891C0012DA8D /* NotAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotAuthViewController.swift; path = school/NotAuthViewController.swift; sourceTree = SOURCE_ROOT; };
 		B53340A72386BDB4003CB922 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53340AA2386BDB4003CB922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53340AE2386BDB4003CB922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,8 +40,10 @@
 		B53340B32386BDB5003CB922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53340B62386BDB5003CB922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53340B82386BDB5003CB922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B54C375F239819B5008514EB /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = SOURCE_ROOT; };
+		B54FCA5623A1029300FCE2A2 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		B54FCA5823A107F300FCE2A2 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		B579F641238EE5C1006FD888 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		B58D88C5239E69CC00568C84 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58D88C6239E69CC00568C84 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,7 @@
 			children = (
 				B53340A92386BDB4003CB922 /* school */,
 				B53340A82386BDB4003CB922 /* Products */,
+				B58D88C4239E69CC00568C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +78,11 @@
 		B53340A92386BDB4003CB922 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				B54FCA5623A1029300FCE2A2 /* DataViewController.swift */,
+				B54FCA5823A107F300FCE2A2 /* DataTableViewCell.swift */,
 				B52FA8192399891C0012DA8D /* NotAuthViewController.swift */,
 				B52FA817239988EE0012DA8D /* AuthViewController.swift */,
-				B54C375F239819B5008514EB /* CustomSegue.swift */,
+				B5A9C96923A17E6000E923F5 /* Models */,
 				B50C178E23954E6D00F505A7 /* CustomCell.swift */,
 				B50C178C239541F200F505A7 /* ProfileViewController.swift */,
 				B518C6B3238D330800F30776 /* CustomTextField.swift */,
@@ -88,6 +98,22 @@
 			path = school;
 			sourceTree = "<group>";
 		};
+		B58D88C4239E69CC00568C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B58D88C5239E69CC00568C84 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A9C96923A17E6000E923F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B51D6BFE239FF08800BCF2B5 /* Object.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +124,7 @@
 				B53340A32386BDB4003CB922 /* Sources */,
 				B53340A42386BDB4003CB922 /* Frameworks */,
 				B53340A52386BDB4003CB922 /* Resources */,
+				B58D88C9239E6AC600568C84 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,21 +181,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B58D88C9239E6AC600568C84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B53340A32386BDB4003CB922 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B52FA81A2399891C0012DA8D /* NotAuthViewController.swift in Sources */,
-				B54C3760239819B5008514EB /* CustomSegue.swift in Sources */,
 				B50C178D239541F200F505A7 /* ProfileViewController.swift in Sources */,
 				B518C6B4238D330800F30776 /* CustomTextField.swift in Sources */,
+				B54FCA5723A1029300FCE2A2 /* DataViewController.swift in Sources */,
 				B53340AF2386BDB4003CB922 /* ViewController.swift in Sources */,
 				B53340AB2386BDB4003CB922 /* AppDelegate.swift in Sources */,
 				B518C6B2238D285C00F30776 /* CustomButton.swift in Sources */,
 				B50C178F23954E6D00F505A7 /* CustomCell.swift in Sources */,
 				B52FA818239988EE0012DA8D /* AuthViewController.swift in Sources */,
+				B5A9C96A23A17F4A00E923F5 /* Object.swift in Sources */,
 				B579F642238EE5C1006FD888 /* RegistrationViewController.swift in Sources */,
+				B54FCA5923A107F300FCE2A2 /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = school/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,6 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = school/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

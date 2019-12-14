@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -40,9 +41,45 @@ class ViewController: UIViewController {
     @IBAction func login(sender: UIButton) {
         
         (delegate as? ProfileViewController)?.test = true
-        
         navigationController?.popToRootViewController(animated: true)
-       
+        
+        guard let url = URL(string: "https://gdemost.handh.ru/api/v1/bridges/?format=json") else {
+            return
+        }
+        
+        let reguest = AF.request(url)
+        
+        reguest.responseDecodable {(result: DataResponse<ObjectResponse, AFError>) in
+            
+            if let value = result.value {
+//                let archivedDate = try?    NSKeyedArchiver.archivedData(withRootObject: value, requiringSecureCoding: true)
+//                do {
+//                    let archivedDate = try    NSKeyedArchiver.archivedData(withRootObject: value, requiringSecureCoding: true)
+////                   let fm = FileManager.default
+////                    archivedDate.write(to: <#T##URL#>)
+//                } catch {
+//                    print(error)
+//                }
+                let test = value.objects
+                test.forEach { (item) in
+                   print(item.photoOpen)
+                   
+                }
+           }
+
+        }
+        
+        let queue = DispatchQueue.global(qos: .background)
+        queue.async {
+            sleep(1)
+            print("\(Thread.isMainThread) 1")
+            sleep(5)
+            print("\(Thread.isMainThread) 2")
+            DispatchQueue.main.async {
+              print("complete \(Thread.isMainThread)")
+            }
+        }
+        
     }
     
 
